@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" text="text/css" href="logoo.css"> 
+  <title> Logo in HTML/CSS</title>
+</head>
+<body>
+  <div id="container">
+    <div id="logo">
+      
+      <div id="lineShort"class="line"></div>
+      <div id="circleOne" class="circle"></div>
+      
+      <div id="circleTwo" class="circle"></div>
+      <script type=text/javascript> 
+      function drawLine() {
+        var canvas = document.getElementById("canvas6")
+        var context = canvas.getContext("2d");
+        context.font ="bold 3em/3.5em ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif";
+        context.textAlign = "center";
+        context.textBaseline = "middle";
+        context.fillStyle = "#ff9933";
+        context.shadowOffsetX="-5";
+        context.shadowOffsetY="5";
+        context.shadowBlur="8";
+        context.shadowColor="#ff9933";
+        context.transform="rotate(45deg)";
+        
+        }
+        </script>
+        <h2>  </h2> 
+        <br /> <br />
+        <canvas width="450" height="450"  id="canvas6" Click="drawLine();></canvas>
+    </div>
+  </div>
+</body>
+</html>

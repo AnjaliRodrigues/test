@@ -1,0 +1,58 @@
+<!DOCUMENT html>
+
+<html>
+<head>
+<META CHARSET="utf-8" \>
+<title> Html5-canvas</title>
+
+<style type=text/css> 
+<!--
+canvas { arc: solid thin red; }
+--> </style> 
+</head>
+<body>
+<script type=text/javascript> 
+
+function drawLine() {
+var canvas = document.getElementById("canvas6")
+var context = canvas.getContext("2d");
+ context.beginPath();
+ context.arc(200, 200, 90, 0, 2 * Math.PI);
+ context.stroke();
+ 
+
+
+
+
+
+
+
+context.font ="bold 3em/3.5em ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif";
+context.textAlign = "center";
+context.textBaseline = "middle";
+context.fillStyle = "#ff9933";
+context.shadowOffsetX="-5";
+context.shadowOffsetY="5";
+context.shadowBlur="8";
+context.shadowColor="#red";
+
+}
+
+
+function eraseSquare2() {
+var canvas = document.getElementById("canvas6");
+canvas.width = canvas.width;
+}
+ </script>
+
+
+<h2> Canvas Demo  </h2> 
+<br /> <br />
+<canvas width="450" height="450" id="canvas6" onClick="drawLine();" ondblclick="eraseSquare2();">
+This page requires an HTML5 compliant browser to render correctly.
+Other browsers may not see anything.
+
+</canvas>
+</body>
+
+</html>
